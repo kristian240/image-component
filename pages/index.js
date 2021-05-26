@@ -10,84 +10,18 @@ const Index = () => (
     <ViewSource pathname='pages/index.js' />
     <div className={styles.card}>
       <h1>Image Component with Next.js</h1>
-      <p>
-        This page demonstrates the usage of the{' '}
-        <a href='https://nextjs.org/docs/api-reference/next/image'>next/image</a> component with
-        live examples.
-      </p>
-      <p>
-        This component is designed to{' '}
-        <a href='https://nextjs.org/docs/basic-features/image-optimization'>
-          automatically optimize
-        </a>{' '}
-        images on-demand as the browser requests them.
-      </p>
-      <hr className={styles.hr} />
-      <h2 id='layout'>Layout</h2>
-      <p>
-        The <Code>layout</Code> property tells the image to respond differently depending on the
-        device size or the container size.
-      </p>
-      <p>
-        Select a layout below and try resizing the window or rotating your device to see how the
-        image reacts.
-      </p>
-      <ul>
-        <li>
-          <Link href='/layout-intrinsic'>
-            <a>layout="intrinsic"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/layout-responsive'>
-            <a>layout="responsive"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/layout-fixed'>
-            <a>layout="fixed"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/layout-fill'>
-            <a>layout="fill"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/background'>
-            <a>background demo</a>
-          </Link>
-        </li>
-      </ul>
-      <hr className={styles.hr} />
-      <h2 id='internal'>Internal Image</h2>
-      <p>
-        The following is an example of a reference to an interal image from the <Code>public</Code>{' '}
-        directory.
-      </p>
-      <p>This image is intentionally large so you have to scroll down to the next image.</p>
-      <Image alt='Vercel logo' src='/vercel.png' width={1000} height={100} objectFit='contain' />
-      <hr className={styles.hr} />
-      <h2 id='external'>External Image</h2>
-      <p>
-        The following is an example of a reference to an external image at{' '}
-        <Code>assets.vercel.com</Code>.
-      </p>
-      <p>
-        External domains must be configured in <Code>next.config.js</Code> using the{' '}
-        <Code>domains</Code> property.
-      </p>
-      <Image
-        alt='Next.js logo'
-        src='https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png'
-        width={1200}
-        height={400}
-      />
       <hr className={styles.hr} />
       <h2 id='external-2'>External CDN Image</h2>
       <Image
         alt='Next.js logo'
         src='https://d2n1n6byqxibyi.cloudfront.net/rendition/933560888063/image_rrait38u4d18d0jm4rt4vi1h7m/-FJPG'
+        width={1200}
+        height={300}
+        objectFit='contain'
+      />
+      <Image
+        alt='Next.js logo'
+        src='https://d2n1n6byqxibyi.cloudfront.net/image/933560888063/image_rrait38u4d18d0jm4rt4vi1h7m/-FJPG'
         width={1200}
         height={300}
         objectFit='contain'
