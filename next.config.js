@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['assets.vercel.com'],
+    domains: ['assets.vercel.com', 'd2n1n6byqxibyi.cloudfront.net'],
   },
-}
+};
