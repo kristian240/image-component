@@ -26,6 +26,13 @@ const Index = () => (
         height={300}
         objectFit='contain'
       />
+      <Image
+        alt='Next.js logo'
+        src='https://d2n1n6byqxibyi.cloudfront.net/rendition/933560888063/image_rrait38u4d18d0jm4rt4vi1h7m/-FJPG-C2010x558.3333333333333,0,8.77217866768658'
+        width={1200}
+        height={300}
+        objectFit='contain'
+      />
       <hr className={styles.hr} />
       <h2 id='more'>Learn More</h2>
       <p>You can optionally configure a cloud provider, device sizes, and more!</p>
